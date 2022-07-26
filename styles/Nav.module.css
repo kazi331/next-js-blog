@@ -1,0 +1,26 @@
+.nav {
+    color: rgb(199, 199, 199);
+    display: flex; 
+    justify-content: center;
+    background-color: #26293d;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.185);
+    font-family: 'cascadia code';
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul li a {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.nav ul li a:hover {
+    color: white;
+    background-color: #2F334D;
+}
