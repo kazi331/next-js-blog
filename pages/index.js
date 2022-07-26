@@ -11,11 +11,9 @@ export default function Home({ articles }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h2 className='text-5xl font-bold text-center'><span className='text-sky-500'>WebDev</span> News</h2>
-        <p className='text-lg font-medium text-center'>Keep updated with daily dev news</p>
         <div className="flex flex-wrap my-10">
           {
-            articles?.map(article =>  <ArticleList article={article} key={article.id} /> )
+            articles?.map(article => <ArticleList article={article} key={article.id} />)
           }
         </div>
       </div>
@@ -32,7 +30,7 @@ export default function Home({ articles }) {
 */
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=20')
   const articles = await res.json();
 
   return {
